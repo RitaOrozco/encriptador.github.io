@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo-->
+    <title>Encriptador de texto</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header>
+        <!--logo superior derecha-->
+         <div class="header">
+             <img class="logo" src="./imagenes/logo 2.ico" alt="">
+         </div>
+    </header>
+
+    <main>
+        <!--Caja de texto izquierda-->
+        <div class="main">  
+             <div class="cajatextoizquierda">
+                <textarea id="ingresaTexto" class="ingresatexto" placeholder="Ingresa el texto aquí"></textarea>
+                <!--Alerta condiciones-->
+                <div class="condiciones">
+                    <img src="./imagenes/alerta (2).ico" alt="">
+                    <span class="terminos">Solo letras minúsculas y sin acentos</span>
+                    <!--Botones Encriptar y Desencriptar-->
+                    <div class="botonesizquierdos">
+                       <button id="botonEncriptar" class="boton_encriptar">Encriptar</button>
+                       <button id="botonDesencriptar" class="boton_desencriptar">Desencriptar</button>
+                    </div>
+                </div>  
+             </div>
+             <!--Caja de texto derecha y muñeco-->
+             <div id="cajatextoderecha" class="cajatextoderecha">
+                <img id="muneco" class="muneco" src="./imagenes/2-removebg-preview.png">
+                <!--Mensaje no encontrado-->
+                <textarea id="mensaje" class="mensaje" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="info" class="info">Ingresa el texto que quieres encriptar o desencriptar</p>
+                <button id="botonCopiar" class="boton_copiar oculto">Copiar</button>
+             </div>
+        </div>
+    </div>
+
+    </main>
+    <footer class="seccion d-flex flex-wrap align-items-center justify-content-center">
+        <img class="footer-logo" src="./imagenes/logo 2.ico" alt="Logo del portafolio">
+             <p class="footer-texto text-center">✧.* Si lo puedo imaginar, lo puedo programar ༊*·˚</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://github.com/RitaOrozco" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+             <a href="https://www.linkedin.com/in/rita-orozco-0b626b267" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+            </a>
+      </div>
+      <div class="derechos-de-autor">༺Creado por Rita Orozco༻ (2023) &#169;</div>
+    </footer>
+   
+    <script src="./script.js"></script>
+</body>
+</html>
